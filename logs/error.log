@@ -30,3 +30,194 @@ Stack Trace:
 #2 {main}
 
 
+2015-12-06 19:01:44 Error: Fatal Error (1): Call to a member function user() on boolean in [/Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php, line 51]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-06 19:01:44 Error: [Cake\Error\FatalErrorException] Call to a member function user() on boolean
+Request URL: /cakephp/articles/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 51)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-12-06 19:02:51 Error: Fatal Error (1): Call to a member function format() on null in [/Applications/MAMP/htdocs/cakephp/src/Template/Articles/index.ctp, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-06 19:02:51 Error: [Cake\Error\FatalErrorException] Call to a member function format() on null
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 22)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-12-06 19:03:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Artcles could not be found.
+Exception Attributes: array (
+  'class' => 'Artcles',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cakephp/artcles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-12-06 19:05:16 Error: Fatal Error (1): Call to a member function format() on null in [/Applications/MAMP/htdocs/cakephp/src/Template/Articles/index.ctp, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-06 19:05:16 Error: Fatal Error (1): Call to a member function format() on null in [/Applications/MAMP/htdocs/cakephp/src/Template/Articles/index.ctp, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-06 19:05:17 Error: [Cake\Error\FatalErrorException] Call to a member function format() on null
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 22)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-12-06 19:05:18 Error: [Cake\Error\FatalErrorException] Call to a member function format() on null
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 22)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-12-06 19:05:33 Error: Fatal Error (1): Call to a member function format() on null in [/Applications/MAMP/htdocs/cakephp/src/Template/Articles/index.ctp, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-06 19:05:33 Error: [Cake\Error\FatalErrorException] Call to a member function format() on null
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 22)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-12-06 19:06:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Article could not be found.
+Exception Attributes: array (
+  'class' => 'Article',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cakephp/article
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-12-06 19:07:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class ArticlesController could not be found.
+Exception Attributes: array (
+  'class' => 'ArticlesController',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cakephp/ArticlesController
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-12-06 19:07:31 Error: Fatal Error (1): Call to a member function format() on null in [/Applications/MAMP/htdocs/cakephp/src/Template/Articles/index.ctp, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-06 19:07:31 Error: [Cake\Error\FatalErrorException] Call to a member function format() on null
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 22)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-12-06 19:20:22 Error: Fatal Error (1): Call to a member function user() on boolean in [/Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php, line 51]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-06 19:20:22 Error: [Cake\Error\FatalErrorException] Call to a member function user() on boolean
+Request URL: /cakephp/articles/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 51)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-12-06 22:08:10 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/Form/EntityContext.php(461): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/Helper/FormHelper.php(1157): Cake\View\Form\EntityContext->type('title')
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/Helper/FormHelper.php(1129): Cake\View\Helper\FormHelper->_inputType('title', Array)
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/Helper/FormHelper.php(987): Cake\View\Helper\FormHelper->_parseOptions('title', Array)
+#6 /Applications/MAMP/htdocs/cakephp/src/Template/Articles/add.ctp(6): Cake\View\Helper\FormHelper->input('title')
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/View.php(971): include('/Applications/M...')
+#8 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/View.php(931): Cake\View\View->_evaluate('/Applications/M...', Array)
+#9 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/View.php(579): Cake\View\View->_render('/Applications/M...')
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-06 22:08:18 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/Form/EntityContext.php(461): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/Helper/FormHelper.php(1157): Cake\View\Form\EntityContext->type('title')
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/Helper/FormHelper.php(1129): Cake\View\Helper\FormHelper->_inputType('title', Array)
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/Helper/FormHelper.php(987): Cake\View\Helper\FormHelper->_parseOptions('title', Array)
+#6 /Applications/MAMP/htdocs/cakephp/src/Template/Articles/add.ctp(6): Cake\View\Helper\FormHelper->input('title')
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/View.php(971): include('/Applications/M...')
+#8 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/View.php(931): Cake\View\View->_evaluate('/Applications/M...', Array)
+#9 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/View.php(579): Cake\View\View->_render('/Applications/M...')
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
