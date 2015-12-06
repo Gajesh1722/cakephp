@@ -1,0 +1,32 @@
+2015-12-06 18:39:45 Error: Fatal Error (1): Call to a member function user() on boolean in [/Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php, line 51]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-06 18:39:45 Error: [Cake\Error\FatalErrorException] Call to a member function user() on boolean
+Request URL: /cakephp/articles/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 51)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-12-06 18:55:42 Error: Fatal Error (1): Call to a member function user() on boolean in [/Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php, line 51]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-06 18:55:42 Error: [Cake\Error\FatalErrorException] Call to a member function user() on boolean
+Request URL: /cakephp/articles/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 51)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
