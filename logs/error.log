@@ -221,3 +221,474 @@ Stack Trace:
 #14 {main}
 
 
+2015-12-06 23:59:04 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/Form/EntityContext.php(461): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/Helper/FormHelper.php(1157): Cake\View\Form\EntityContext->type('title')
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/Helper/FormHelper.php(1129): Cake\View\Helper\FormHelper->_inputType('title', Array)
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/Helper/FormHelper.php(987): Cake\View\Helper\FormHelper->_parseOptions('title', Array)
+#6 /Applications/MAMP/htdocs/cakephp/src/Template/Articles/add.ctp(6): Cake\View\Helper\FormHelper->input('title')
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/View.php(971): include('/Applications/M...')
+#8 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/View.php(931): Cake\View\View->_evaluate('/Applications/M...', Array)
+#9 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/View/View.php(579): Cake\View\View->_render('/Applications/M...')
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-06 23:59:26 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-06 23:59:36 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-06 23:59:51 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/Articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-07 00:00:03 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-07 00:00:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Article could not be found.
+Exception Attributes: array (
+  'class' => 'Article',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cakephp/article
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-12-07 00:57:26 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-07 00:57:51 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-07 00:58:45 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-07 00:59:58 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/Articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-07 01:00:08 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-07 01:00:08 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-07 01:01:24 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-07 01:01:32 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-07 01:02:05 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-07 01:02:05 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-07 01:18:16 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-07 01:18:49 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-07 01:18:49 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-07 01:19:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class ArticlesTable could not be found.
+Exception Attributes: array (
+  'class' => 'ArticlesTable',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cakephp/ArticlesTable
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-12-07 01:26:46 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-07 01:26:47 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.articles' doesn't exist
+Request URL: /cakephp/articles
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\Collection->describe('articles')
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ArticlesTable))
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ArticlesTable))
+#5 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#6 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#8 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#9 [internal function]: App\Controller\ArticlesController->index()
+#10 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-12-07 01:29:46 Error: Fatal Error (1): Call to a member function user() on boolean in [/Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php, line 51]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-07 01:29:47 Error: [Cake\Error\FatalErrorException] Call to a member function user() on boolean
+Request URL: /cakephp/articles/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 51)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-12-07 01:35:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Src could not be found.
+Exception Attributes: array (
+  'class' => 'Src',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cakephp/src/Template/users/login.ctp
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-12-07 01:37:37 Error: Fatal Error (1): Call to a member function user() on boolean in [/Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php, line 51]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-07 01:37:37 Error: [Cake\Error\FatalErrorException] Call to a member function user() on boolean
+Request URL: /cakephp/articles/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 51)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
