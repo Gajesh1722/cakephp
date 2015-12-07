@@ -255,7 +255,7 @@ return [
             //'port' => 'nonstandard_port_number',
             'username' => 'my_app',
             'password' => 'secret',
-            'database' => 'test_myapp',
+            'database' => 'cakephp',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'cacheMetadata' => true,

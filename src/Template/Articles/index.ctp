@@ -1,7 +1,8 @@
 <!-- File: src/Template/Articles/index.ctp -->
 
 <h1>Blog articles</h1>
-<?= $this->Html->link('Add Article', ['action' => 'add']) ?>
+<?= $this->Html->link('Add Article', ['action' => 'add']) ?><br>
+<?= $this->Html->link('LogIn', ['controller' => 'users','action' => 'login']) ?>
 <table>
     <tr>
         <th>Id</th>
