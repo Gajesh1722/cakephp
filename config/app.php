@@ -220,9 +220,9 @@ return [
             'database' => 'cakephp',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
-            //'flags' => [],
-            //'cacheMetadata' => true,
-            //'log' => false,
+            'flags' => [],
+            'cacheMetadata' => true,
+            'log' => false,
 
             /**
              * Set identifier quoting to true if you are using reserved words or

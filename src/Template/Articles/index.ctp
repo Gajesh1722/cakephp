@@ -19,7 +19,7 @@
             <?= $this->Html->link($article->title, ['action' => 'view', $article->id]) ?>
         </td>
         <td>
-            <?= $article->created->format(DATE_RFC850) ?>
+            <?= $article->date ?>
         </td>
         <td>
             <?= $this->Html->link('Edit', ['action' => 'edit', $article->id]) ?>
