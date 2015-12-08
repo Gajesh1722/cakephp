@@ -1,8 +1,9 @@
 <!-- File: src/Template/Articles/index.ctp -->
 
-<h1>Blog articles</h1>
-<?= $this->Html->link('Add Article', ['action' => 'add']) ?><br>
-<?= $this->Html->link('LogIn', ['controller' => 'users','action' => 'login']) ?>
+<h1>CakePHP</h1>
+<p><?= $this->Html->link('Add Article', ['action' => 'add']) ?></p>
+<p><?php echo $this->Html->link('Comment', array('action'=> 'view'));?></p>
+<p><?= $this->Html->link('LogIn', ['controller' => 'users','action' => 'login']) ?></p>
 <table>
     <tr>
         <th>Id</th>

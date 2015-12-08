@@ -455,3 +455,79 @@ Stack Trace:
 #2 {main}
 
 
+2015-12-07 06:32:59 Error: Fatal Error (1): Call to a member function allow() on boolean in [/Applications/MAMP/htdocs/cakephp/src/Controller/UsersController.php, line 14]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-07 06:33:00 Error: [Cake\Error\FatalErrorException] Call to a member function allow() on boolean
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 14)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-12-07 06:43:37 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "articles" with primary key [NULL]
+Request URL: /cakephp/articles/view
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(36): Cake\ORM\Table->get(NULL, Array)
+#1 [internal function]: App\Controller\ArticlesController->view()
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#5 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-12-07 06:44:13 Error: Fatal Error (1): Call to a member function allow() on boolean in [/Applications/MAMP/htdocs/cakephp/src/Controller/UsersController.php, line 14]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-07 06:44:13 Error: [Cake\Error\FatalErrorException] Call to a member function allow() on boolean
+Request URL: /cakephp/users
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 14)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-12-07 06:44:48 Error: Fatal Error (1): Call to a member function allow() on boolean in [/Applications/MAMP/htdocs/cakephp/src/Controller/UsersController.php, line 14]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-07 06:44:48 Error: [Cake\Error\FatalErrorException] Call to a member function allow() on boolean
+Request URL: /cakephp/users
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 14)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-12-07 06:52:37 Error: Fatal Error (1): Call to a member function allow() on boolean in [/Applications/MAMP/htdocs/cakephp/src/Controller/UsersController.php, line 14]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-07 06:52:37 Error: [Cake\Error\FatalErrorException] Call to a member function allow() on boolean
+Request URL: /cakephp/users
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 14)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
