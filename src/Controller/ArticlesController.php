@@ -16,6 +16,13 @@ class ArticlesController extends AppController
      *
      * @return void
      */
+    public function initialize()
+    {
+        parent::initialize();
+
+        $this->loadComponent('Flash'); // Include the FlashComponent
+    }
+
     public function index()
     {
         $this->set('articles', $this->paginate($this->Articles));
@@ -41,7 +48,7 @@ class ArticlesController extends AppController
     /**
      * Add method
      *
-     * @return void Redirects on successful add, renders view otherwise.
+    /*@return void Redirects on successful add, renders view otherwise.
      */
     public function add()
     {
