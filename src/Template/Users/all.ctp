@@ -1,4 +1,4 @@
-<!-- File: src/Template/Articles/edit.ctp -->
+<!-- File: src/Template/Users/all.ctp -->
 <div> 
     <div>
         <div>
@@ -35,22 +35,31 @@
 			</div>
 		</div>
 		<div>
-        <h1>Edit Article</h1>
-            <?php
-                echo $this->Form->create($article);
-                echo $this->Form->input('title');
-                echo $this->Form->input('content', ['rows' => '10']);    
-				
-				echo $this->Form->input('publish', array(
-									'label' => __('Publish',true),
-									'type' => 'checkbox'));
-									
-                echo $this->Form->input('commentsAllowed', array(
-									'type' => 'checkbox', 
-									'label' => 'Allow Comments'));
-				}		
-				echo $this->Form->button(__('Save Article'));
-                echo $this->Form->end();
-            ?>
-        </div>
+        <h1> Users </h1>
+        <table>
+            <tr>
+                <th>UserName</th>
+                <th>Role</th>
+                <th>Delete</th>
+            </tr>
+			<?php foreach ($users as $user): 
+			?>
+            <tr>
+                <td>
+                    <?= $user->username ?>       
+                </td>                
+                <td><?= $user->role ?></td>
+                <td><?
+				if($this->request->session()->read('Auth.User.role') == 'admin' && $this->request->session()->read('Auth.User.id') != $user->id){
+						echo $this->Html->link('Delete', ['controller' => 'Users','action' => 'delete', $user->id]);
+
+			}else{
+						echo "---";
+			}
+					?>
+				</td>
+            </tr>
+			<?php endforeach; ?>
+        </table>
+    </div>
 </div>

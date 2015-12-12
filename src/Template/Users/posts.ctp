@@ -1,4 +1,4 @@
-<!-- File: src/Template/Articles/index.ctp -->
+<!-- File: src/Template/Users/posts.ctp -->
 <div> 
     <div>
         <div>
@@ -34,33 +34,34 @@
 				<?	} ?>
 			</div>
 		</div>
-		<div>
-        <h1>All Articles </h1>
+		<div class="row">
+        <h1> Articles </h1>
         <table>
             <tr>
                 <th>Title</th>
                 <th>Date</th>
                 <th>Comments</th>
-                <th>Allow Comments</th>
                 <th>Status</th>
+                <th>Allow Comments</th>
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
-
-            <?php foreach ($articles as $article): ?>
+			<?php foreach ($users as $user): ?>
+			<?php if($user->id = $this->request->session()->read('Auth.User.id')) { 
+			foreach ($user['articles'] as $article): ?>
             <tr>
                 <td>
-                    <?= $this->Html->link($article->title, ['action' => 'view', $article->id]) ?>       
+                    <?= $this->Html->link($article->title, ['controller' => 'articles', 'action' => 'view', $article->id]) ?>       
                 </td>                
                 <td><?= $article->date ?></td>
-                <td><?= $this->Html->link($article->commentCount, ['action' => 'comments', $article->id]) ?> </td>
+                <td><?= $this->Html->link($article->commentCount, ['controller' => 'articles','action' => 'comments', $article->id]) ?> </td>
                 <td>
-                    <?= $this->Html->link('Edit', ['action' => 'edit', $article->id]) ?>       
+                    <?= $this->Html->link('Edit', ['controller' => 'articles','action' => 'edit', $article->id]) ?>       
                 </td>
                 <td>
                     <?= $this->Form->postLink(
                         'Delete',
-                        ['action' => 'delete', $article->id],
+                        ['controller' => 'articles','action' => 'delete', $article->id],
                         ['confirm' => 'Are you sure?'])
                     ?>
                 </td>
@@ -71,12 +72,12 @@
                         if($article->publish){
                             echo $this->Form->postLink(
                                 'Draft',
-                                ['action' => 'draft', $article->id],
+                                ['controller' => 'articles','action' => 'draft', $article->id],
                                 ['confirm' => 'Are you sure?']);
                         }else{
                             echo $this->Form->postLink(
                                 'Publish',
-                                ['action' => 'publish', $article->id],
+                                ['controller' => 'articles','action' => 'publish', $article->id],
                                 ['confirm' => 'Are you sure?']);
 
                         }
@@ -90,12 +91,12 @@
                         if($article->commentsAllowed){
                             echo $this->Form->postLink(
                                 'Block',
-                                ['action' => 'block', $article->id],
+                                ['controller' => 'articles','action' => 'block', $article->id],
                                 ['confirm' => 'Are you sure?']);
                         }else{
                             echo $this->Form->postLink(
                                 'Allow',
-                                ['action' => 'allow', $article->id],
+                                ['controller' => 'articles','action' => 'allow', $article->id],
                                 ['confirm' => 'Are you sure?']);
 
                         }
@@ -103,6 +104,8 @@
                     ?>
                 </td>
             </tr>
+            <?php endforeach; ?>
+			<?php } ?>
             <?php endforeach; ?>
         </table>
     </div>

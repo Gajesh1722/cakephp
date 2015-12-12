@@ -13,6 +13,15 @@
           parent::beforeFilter($event);
           $this->Auth->allow(['add', 'logout']);
       }
+      public function delete($id)
+    {
+        $user = $this->Users->get($id);
+        if ($this->Users->delete($user)) {
+            $this->Flash->success(__('The User with id: {0} has been deleted.', h($id)));
+            return $this->redirect($this->referer());
+        }
+    }
+
 
       public function login()
       {
@@ -25,9 +34,18 @@
           $this->Flash->error(__('Invalid username or password, try again'));
         }
       }
+      public function home()
+     {
+        $this->set('users', $this->Users->find('all'));
+    }
+      public function all()
+     {
+        $this->set('users', $this->Users->find('all'));
+    }
 
       public function logout()
       {
+        $this->request->session()->destroy('Auth');
         return $this->redirect($this->Auth->logout());
       }
 
@@ -55,6 +73,18 @@
           }
           $this->set('user', $user);
       }
+      public function posts()
+    {
+
+		$user=$this->request->session()->read('Auth.User');
+		if($user['role'] == 'admin'){
+        $users = $this->Users->find('all')->contain(['Articles']);
+		}else{
+        $users = $this->Users->find('all', array('conditions' => array('id' => $user['id'])))->contain(['Articles']);
+		}
+        $this->set(compact('users'));
+    }
+
 
   }
 ?>

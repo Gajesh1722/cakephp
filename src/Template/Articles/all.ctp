@@ -1,4 +1,4 @@
-<!-- File: src/Template/Articles/edit.ctp -->
+<!-- File: src/Template/Articles/all.ctp -->
 <div> 
     <div>
         <div>
@@ -34,23 +34,28 @@
 				<?	} ?>
 			</div>
 		</div>
-		<div>
-        <h1>Edit Article</h1>
-            <?php
-                echo $this->Form->create($article);
-                echo $this->Form->input('title');
-                echo $this->Form->input('content', ['rows' => '10']);    
-				
-				echo $this->Form->input('publish', array(
-									'label' => __('Publish',true),
-									'type' => 'checkbox'));
-									
-                echo $this->Form->input('commentsAllowed', array(
-									'type' => 'checkbox', 
-									'label' => 'Allow Comments'));
-				}		
-				echo $this->Form->button(__('Save Article'));
-                echo $this->Form->end();
-            ?>
-        </div>
+	
+	<?php foreach($articles as $article): ?>
+		<div class="row">
+			<div class="articleCotainer">
+				<div class="article w3-card-4 w3-yellow">
+					<div class="articleTitle"> 
+						<?= $this->Html->link($article['title'], ['action' => 'view', $article['id']]) ?>
+					</div>
+					<h5>Content</h5>
+					<div class="articleContent">
+						<?= $article['content'] ?>
+					</div>
+					<div clsss="comments">
+						<h5>Comments</h5>
+						<div class="comment">
+							<? foreach($article['comments'] as $comment){ ?>
+							<?= "<p>".$comment['authorName']."->".$comment['content']."</p>" ?>
+							<? } ?> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<?php endforeach; ?>   
 </div>

@@ -531,3 +531,59 @@ Stack Trace:
 #2 {main}
 
 
+2015-12-11 23:48:47 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "articles" with primary key [NULL]
+Request URL: /cakephp/articles/view
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(43): Cake\ORM\Table->get(NULL, Array)
+#1 [internal function]: App\Controller\ArticlesController->view()
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#5 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-12-12 01:57:29 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "articles" with primary key [NULL]
+Request URL: /cakephp/articles/view
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php(43): Cake\ORM\Table->get(NULL, Array)
+#1 [internal function]: App\Controller\ArticlesController->view()
+#2 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#5 /Applications/MAMP/htdocs/cakephp/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-12-12 02:04:49 Error: Fatal Error (1): Call to a member function allow() on boolean in [/Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php, line 21]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-12 02:04:49 Error: [Cake\Error\FatalErrorException] Call to a member function allow() on boolean
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 21)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-12-12 02:06:51 Error: Fatal Error (1): Call to a member function allow() on boolean in [/Applications/MAMP/htdocs/cakephp/src/Controller/ArticlesController.php, line 21]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-12 02:06:51 Error: [Cake\Error\FatalErrorException] Call to a member function allow() on boolean
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 21)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

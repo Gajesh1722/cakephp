@@ -1,4 +1,4 @@
-<!-- File: src/Template/Articles/edit.ctp -->
+<!-- File: src/Template/Users/home.ctp -->
 <div> 
     <div>
         <div>
@@ -34,23 +34,4 @@
 				<?	} ?>
 			</div>
 		</div>
-		<div>
-        <h1>Edit Article</h1>
-            <?php
-                echo $this->Form->create($article);
-                echo $this->Form->input('title');
-                echo $this->Form->input('content', ['rows' => '10']);    
-				
-				echo $this->Form->input('publish', array(
-									'label' => __('Publish',true),
-									'type' => 'checkbox'));
-									
-                echo $this->Form->input('commentsAllowed', array(
-									'type' => 'checkbox', 
-									'label' => 'Allow Comments'));
-				}		
-				echo $this->Form->button(__('Save Article'));
-                echo $this->Form->end();
-            ?>
-        </div>
 </div>

@@ -29,6 +29,15 @@ class ArticlesTable extends Table
         $this->primaryKey('id');
 
         $this->addBehavior('Timestamp');
+        $this->hasMany('Comments', [
+            'foreignKey' => 'article_id',
+            'dependent' => true,
+			'cascadeCallbacks' => true
+
+        ]); 
+        $this->belongsTo('Users', [
+			'foreignKey' => 'user_id',
+			]);
 
     }
 
